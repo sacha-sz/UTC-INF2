@@ -1,0 +1,74 @@
+{% extends 'structure.html' %}
+
+{% block title %} INF2 - TD Web{% endblock %}
+
+{% block content %}
+    <div>
+        {% if prenom %}
+            Bonjour {{ prenom }} !
+        {% else %}
+            <p>
+                Il me manque quelques informations pour dire bonjour.
+                Pouvez-vous me donner votre prénom ? (/gestion_cours?prenom=XXX)
+            </p>
+        {% endif %}
+
+    </div>
+
+    <div>
+        <h2>Quelques exemples</h2>
+
+        <article>
+            <h3>Titres</h3>
+            <div class="bg-grey container">
+                <h1>Niveau 1</h1>
+                <h2>Niveau 2</h2>
+                <h3>Niveau 3</h3>
+                <h4>Niveau 4</h4>
+                <h5>Niveau 5</h5>
+                <h6>Niveau 6</h6>
+            </div>
+
+        </article>
+        <article>
+            <h3>Liens</h3>
+            <div class="bg-grey container">
+
+                <a class="link" href="https://ent.utc.fr" target="_blank">Lien vers ENT (dans un nouvel onglet)</a>
+                <br>
+                <a class="link" href="/">Lien vers l'accueil</a>
+            </div>
+        </article>
+
+        <article>
+            <h3>Tableau</h3>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Col 1</th>
+                    <th>Col 2</th>
+                    <th>Col 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>A1</td>
+                    <td>A2</td>
+                    <td>A3</td>
+                </tr>
+                <tr>
+                    <td>B1</td>
+                    <td>B2</td>
+                    <td>B3</td>
+                </tr>
+                <tr>
+                    <td>C1</td>
+                    <td colspan="2">C2 - colspan 2</td>
+                </tr>
+                </tbody>
+            </table>
+        </article>
+
+    </div>
+{% endblock %}
+

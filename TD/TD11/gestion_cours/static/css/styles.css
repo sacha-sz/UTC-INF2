@@ -1,0 +1,103 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #184e5b;
+    color: white;
+}
+
+#navbar-container {
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    line-height: 50px;
+}
+
+#navbar {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#navbar > span {
+    font-weight: bold;
+    font-size: large;
+}
+
+#navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+}
+
+#navbar ul li a {
+    cursor: pointer;
+    padding: 10px 8px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#navbar ul li a.active {
+    background-color: #4085bf;
+    color: white;
+    border-radius: 5px;
+}
+
+#navbar ul li a:hover {
+    background-color: #2e5e85;
+    color: white;
+    border-radius: 5px;
+}
+
+
+#navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.bg-grey {
+    background: #fafafa;
+}
+
+.errorlist {
+    font-weight: bold;
+    color: darkred;
+}

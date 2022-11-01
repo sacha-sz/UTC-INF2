@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Page HTML de base">
+    <meta name="author" content="Loïc JUMEL">
+    <title>INF2 - TD</title>
+    <base href="/gestion_cours/">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+<nav id="navbar-container">
+    <div id="navbar">
+        <span><a href="">INF2 - Gestion cours</a></span>
+        {% block navbar %}
+            <ul>
+                <li><a href="etudiants" {% if "/etudiants" in request.path %}class="active"{% endif %}>Étudiants</a>
+                </li>
+                <li><a href="enseignants"
+                       {% if "/enseignants" in request.path %}class="active"{% endif %}>Enseignants</a></li>
+                <li><a href="cours" {% if "/cours" in request.path %}class="active"{% endif %}>UVs</a></li>
+            </ul>
+        {% endblock %}
+    </div>
+</nav>
+<main class="container">
+    <h1>{% block title %}INF2 - TD Web{% endblock %}</h1>
+
+    {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>
