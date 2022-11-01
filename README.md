@@ -180,7 +180,9 @@ github qui permet d'afficher les codes sources sans les exécuter.
         └── TP6-INF2.ipynb
 ```
 ## :technologist: - Langage utilisé
-- [python](https://www.python.org/)
+- [Python](https://www.python.org/)
+- [HTML](https://www.wikiwand.com/fr/Hypertext_Markup_Language)
+- [Jupyter Notebook](https://jupyter.org/)
 
 ## :memo: - Licence
 
