@@ -2,6 +2,9 @@
 Contient les codes sources des TD et TP de l'UV INF2 à l'Université de Technologie de Compiègne.
 Tous les codes sources sont codés en python.
 
+Les rendus des différents TP ont été codés en jupyter notebook, il est donc recommandé d'utiliser jupyter notebook pour les exécuter.
+Si vous n'avez pas jupyter notebook, vous pouvez utiliser le site https://jupyter.org/try pour exécuter les codes sources ou
+github qui permet d'afficher les codes sources sans les exécuter.
 
 ## :card_index_dividers: - Arborescence du projet
 
