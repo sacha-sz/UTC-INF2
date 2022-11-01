@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+<header></header>
+    <div class="header">
+       {% block nav %}
+       <a class="button button-primary" href="/">Accueil</a>
+       <a class="button button-primary" href="/profile/">Profile</a>
+       <a class="button button-primary" href="/change_password/">Change Password</a>
+       <a class="button button-primary" href="/del_user/">Delete user</a>
+       <a class="button button-primary" href="/new_user/">Add user</a>
+       <a class="button button-primary" href="/sim_list/">Simulations</a>
+       <a class="button button-primary" href="/newsimu/">New Simulation</a>
+       {% endblock %}
+   </div>
+
+   <section id="content" class="container">
+       {% block content %}
+           {% if user.is_authenticated %}
+                Bonjour: {{ user.username }} !
+                <p><a href="{% url 'logout' %}">Déconnexion</a></p>
+            {% else %}
+               <p>Vous n'êtes pas connecté.</p>
+                <a href="{% url 'login' %}">Connexion</a>
+            {% endif %}
+       {% endblock %}
+   </section>
+
+<footer class="footer"><div class="row">
+    <div class="two-thirds column">Date :{% block Date %} {% now "d/m/Y" %} {% endblock %} </div>
+    <div class="two-thirds column">Heure :{% block Hours %} {% now "H:i" %} {% endblock %} </div>
+    <div class="one-third column">INF2 TP6</div>
+    <div class="one-third column">Auteurs : XXXX YYYYY</div>
+  </div></footer>
+</body>
+</html>

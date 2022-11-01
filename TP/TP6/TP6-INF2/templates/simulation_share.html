@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>Partage de simulation</h3>
+<form method="post">
+    {% csrf_token %}
+    {% if impossible_send %}<p style="color:darkred">Vous ne pouvez pas partager deux fois la simulation à la même personne, ou vous la partager.</p>{% endif %}
+    {{ form.as_p }}
+    <a href="/sim_list" class="btn btn-success">Retour page simulation</a>
+    <button type="submit" class="btn btn-success">Share</button>
+</form>
+{% endblock %}

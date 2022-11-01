@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>User: {{user.username}}</h3>
+
+<p>Renseignez vos informations personnelles ci-dessous.</p>
+{%if erreur_email%}<p style="color:darkred"> Erreur email.</p>{%endif%}
+<form action="{% url 'profile' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+{%if envoi%}<p style="color:darkgreen"> Données mises à jour.</p>{%endif%}
+
+<p><a href="/change_password" class="btn btn-success">Change Password</a></p>
+<p><a href="/del_user" class="btn btn-success">Supprimer compte</a></p>
+<input type="submit" value="Edit informations" /></form>
+{% endblock %}

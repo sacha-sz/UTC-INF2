@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+{% if email_not_available %}<p style="color:red">Un compte avec cette adresse mail existe déjà.</p>{% endif %}
+{% if erreur %}<p style="color:red">Formulaire incorrect.</p>{% endif %}
+
+
+<h3>Nouvel utilisateur : </h3>
+<form action="{% url 'add_user' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="S'inscrire" />
+</form>
+
+{% endblock %}
+

@@ -1,0 +1,18 @@
+000;Wayne;Bruce;33;admis
+001;Kent;Clark;24;admis
+002;Allen;Barry;19;refuse
+003;Beckett;Kate;28;ajourne
+004;Castle;Richard;27;refuse
+005;Esposito;Javier;35;admis
+006;Ryan;Kevin ;34;refuse
+007;Bond;James;36;admis
+008;Peralta;Jake;28;admis
+009;Jeffords;Terry;27;refuse
+010;Holt;Raymond;45;admis
+011;Judy;Doug;26;refuse
+012;Jun-fan;Bruce;32;admis
+013;Di Caprio;Leonardo;47;refuse
+0014;Stark;Tony;36;refuse
+015;Parker;Peter;24;admis
+016;Roronoa;Zoro;26;admis
+017;Claus;Santa;19;ajourne

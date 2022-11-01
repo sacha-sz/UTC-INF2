@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h3>User: {{user.username}}</h3>
+
+{% if erreur_saisie %}<p style="color:darkred">Tapez le mot CONFIRMER, attention à la casse.</p>{% endif %}
+
+<form action="{% url 'del_user' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><input type="submit" value="Suppression" /></p>
+    <p><a href="/profile" class="btn btn-success">Retour page : Profile</a></p>
+</form>
+
+{% endblock %}

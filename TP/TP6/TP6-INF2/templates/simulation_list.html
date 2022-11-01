@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+{% csrf_token %}
+<h2>Simulations faites:</h2>
+<script type="text/javascript">
+    $(document).on('click', '.confirm-delete', function(){
+        ;
+    })
+</script>
+<h3>Favoris :</h3>
+<ul>
+{% for sim in user_sims %}
+    {% if sim.is_favorite %}
+        <li>Créateur :{{sim.user_creator}}, Paramètres :[{{sim.alpha}},{{sim.beta}},{{sim.gamma}},{{sim.delta}},{{sim.epsilon}}]
+            <a href="{% url 'run_sim' sim.id %}">Re-run</a>
+            <a href="{% url 'delete_sim' sim.id %}">Delete</a>
+            <a href="{% url 'share_sim' sim.id %}">Share</a>
+            <a href="{% url 'fav_sim' sim.id %}">Unfav</a>
+        </li>
+    {% endif %}
+{% endfor %}
+</ul>
+
+<h3>Non favoris :</h3>
+<ul>
+{% for sim in user_sims %}
+    {% if not sim.is_favorite %}
+
+        <li>Créateur :{{sim.user_creator}}, Paramètres :[{{sim.alpha}},{{sim.beta}},{{sim.gamma}},{{sim.delta}},{{sim.epsilon}}]
+            <a href="{% url 'run_sim' sim.id %}">Re-run</a>
+            <a href="{% url 'delete_sim' sim.id %}">Delete</a>
+            <a href="{% url 'share_sim' sim.id %}">Share</a>
+            <a href="{% url 'fav_sim' sim.id %}">Fav</a>
+        </li>
+
+    {% endif %}
+{% endfor %}
+</ul>
+
+<h2>Simulations reçus:</h2>
+<script type="text/javascript">
+    $(document).on('click', '.confirm-delete', function(){
+        ;
+    })
+</script>
+<ul>
+{% for sim in user_shared %}
+        <li>Créateur :{{sim.user_creator}}, Paramètres :[{{sim.alpha}},{{sim.beta}},{{sim.gamma}},{{sim.delta}},{{sim.epsilon}}]
+            <a href="{% url 'run_sim' sim.id %}">Re-run</a>
+            <a href="{% url 'delete_sim' sim.id %}">Delete</a>
+            <a href="{% url 'share_sim' sim.id %}">Share</a>
+        </li>
+{% endfor %}
+{% endblock %}

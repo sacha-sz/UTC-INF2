@@ -89,9 +89,92 @@ Tous les codes sources sont codés en python.
 .   .   └── EX3.py
 └── TP
     ├── TP1 
+    .   ├── Correction TP1
+    .   .   ├── ex1.py
+    .   .   ├── ex2.py
+    .   .   ├── ex3.py
+    .   .   ├── ex4.py
+    .   .   ├── ex5.py
+    .   .   └── ex6.py
+    .   ├── TP1
+    .   .   └── TP1.ipynb
+    .   └── TP1.pdf
     ├── TP2
+    .   ├── TP2.pdf
+    .   └── TP2-INF2.ipynb
     ├── TP3
-    └── TP4
+    .   ├── BF-latitude-longitude.png
+    .   ├── PG-latitude-longitude.png
+    .   ├── TP3.pdf
+    .   └── TP3-INF2.ipynb
+    ├── TP4
+    .   ├── Image-Rapport
+    .   .   ├── cercle_colore_1.png
+    .   .   ├── cercle_colore_2.png
+    .   .   └── courbe_cosinus.png
+    .   ├── admis.txt
+    .   ├── concours.txt
+    .   ├── math.csv
+    .   ├── math2.csv
+    .   ├── TP4.pdf
+    .   └── TP4-INF2.ipynb
+    ├── TP5
+    .   ├── Images
+    .   .   ├── Ecran_accueil.png
+    .   .   ├── Ecran_addition.png
+    .   .   ├── Ecran_carre.png
+    .   .   ├── Ecran_cos.png
+    .   .   ├── Ecran_division.png
+    .   .   ├── Ecran_erreur_0.png
+    .   .   ├── Ecran_erreur_syntaxe.png
+    .   .   ├── Ecran_erreur_syntaxe_corrige.png
+    .   .   ├── Ecran_erreur_valeur.png
+    .   .   ├── Ecran_multiplication.png
+    .   .   ├── Ecran_puissance.png
+    .   .   ├── Ecran_sin.png
+    .   .   ├── Ecran_sin_pi.png
+    .   .   ├── Ecran_soustraction.png
+    .   .   ├── Ecran_sqrt.png
+    .   .   ├── Ecran_tan.png
+    .   .   └── Enonce.png
+    .   ├── TP5.pdf
+    .   └── TP5-INF2.ipynb
+    └── TP6
+        ├── TP6-INF2
+        .   ├── djangoTP
+        .   .   ├── __init__.py
+        .   .   ├── settings.py
+        .   .   ├── urls.py
+        .   .   └── wsgi.py
+        .   ├── pyfhn
+        .   .   └── ...
+        .   ├── sim_manager
+        .   .   ├── __init__.py
+        .   .   ├── admin.py
+        .   .   ├── apps.py
+        .   .   ├── migrations
+        .   .   .   └── ...
+        .   .   ├── models.py
+        .   .   ├── tests.py
+        .   .   └── views.py
+        .   ├── templates
+        .   .   ├── registration
+        .   .   .   ├── login.html
+        .   .   .   └── logout.html
+        .   .   ├── base.html
+        .   .   ├── change_password.html
+        .   .   ├── del_user.html
+        .   .   ├── edit_profile.html
+        .   .   ├── graphic.html
+        .   .   ├── new_profile.html
+        .   .   ├── newsimu.html
+        .   .   ├── simulation_list.html
+        .   .   └── simulation_share.html
+        .   ├── manage.py
+        .   └── db.sqlite3
+        ├── Configuration d environnement TP6.txt
+        ├── TP6.pdf
+        └── TP6-INF2.ipynb
 ```
 ## :technologist: - Langage utilisé
 - [python](https://www.python.org/)

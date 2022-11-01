@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<p>
+    <h3>Résultat simulation : </h3>
+    {{graphic|safe}}
+    <a href="{% url 'sim_list' %}" class="btn btn-dark">Retour liste</a>
+</p>
+{% endblock %}
