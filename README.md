@@ -193,4 +193,4 @@ github qui permet d'afficher les codes sources sans les exécuter.
 -   **sacha-sz** - Tous les TD et TP - [sacha-sz](https://github.com/sacha-sz/)
 
 ## :bookmark_tabs: - Références
-- **Lien moodle vers le cours** : [UTC-INF2](https://moodle.utc.fr/course/view.php?id=2590)
+- **Lien moodle vers le cours**, (nécessite d'être connecté pour y accéder) : [UTC-INF2](https://moodle.utc.fr/course/view.php?id=2590)
