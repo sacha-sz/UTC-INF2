@@ -86,12 +86,12 @@ github qui permet d'afficher les codes sources sans les exécuter.
 .   .   ├── manage.py
 .   .   └── db_INF2.sqlite3
 .   └── TD12
-.   .   ├── TD12_calculVisu.pdf
-.   .   ├── EX1.py
-.   .   ├── EX2.py
-.   .   └── EX3.py
+.       ├── TD12_calculVisu.pdf
+.       ├── EX1.py
+.       ├── EX2.py
+.       └── EX3.py
 └── TP
-    ├── TP1 
+    ├── TP1
     .   ├── Correction TP1
     .   .   ├── ex1.py
     .   .   ├── ex2.py
